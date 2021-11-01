@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BEAN\ClienteBEAN.cs" />
+    <Compile Include="BEAN\trabajorBEAN.cs" />
+    <Compile Include="DAO\trabajadorDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

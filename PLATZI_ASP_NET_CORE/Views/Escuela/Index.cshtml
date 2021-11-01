@@ -1,0 +1,12 @@
+﻿@model Escuela
+
+@{
+    ViewData["Title"] = "Informacion de la escuela";
+    //si no se encuentra, se ejecuta como default
+    Layout="_Layout";
+}
+
+<!--Este codigo se ejecuta en el '_Layout--RenderBody'-->
+<h1>Escuela: @Model.escuelaId</h1>
+<h2>Nombre: @Model.nombre</h2>
+<p><strong>Año fundacion: @Model.añoFundacion</strong></p>

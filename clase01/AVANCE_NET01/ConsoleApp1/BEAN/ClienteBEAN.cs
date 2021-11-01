@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.BEAN
 {
+    //ClienteBean equivale a una tabla 
     public class ClienteBEAN
     {
+        //Los datos de aquí, equivalen a los campos
+        #region POO
         //propfull ambiguo
         private char genero;
 
@@ -22,7 +25,29 @@ namespace ConsoleApp1.BEAN
         public string Apellido { get; set; }
         public int Edad { get; set; }
         public string Carrera { get; set; }
+        #endregion
 
-        //explicara la diferencia entre prop y propfull
+        #region METODOS
+        //sin parametros
+        public string concatenarDatos()
+        {
+            string concatenado = "";
+
+            concatenado = Nombre + " " + Apellido;
+
+            return concatenado;
+        }
+
+        //con parametros
+        public string concatenarDatosConParametros(string pNombre, string pApellido)
+        {
+            string concatenado = "";
+
+            concatenado = pNombre + " " + pApellido;
+
+            return concatenado;
+        }
+        #endregion
+
     }
 }
