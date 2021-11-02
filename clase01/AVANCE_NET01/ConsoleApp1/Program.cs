@@ -117,91 +117,141 @@ namespace ConsoleApp1
             #endregion
 
             #region DICCIONARY
-            //key - value
-            //int val = 0;
+            ////key - value
+            ////int val = 0;
 
-            //Dictionary<int, string> datos = new Dictionary<int, string>();
-            //datos.Add(1, "Lunes");
-            //datos.Add(2, "Martes");
-            //datos.Add(3, "Miercoles");
-            //datos.Add(4, "Jueves");
-            //datos.Add(5, "Viernes");
-            //datos.Add(6, "Sabado");
-            //datos.Add(7, "Domingo");
+            ////Dictionary<int, string> datos = new Dictionary<int, string>();
+            ////datos.Add(1, "Lunes");
+            ////datos.Add(2, "Martes");
+            ////datos.Add(3, "Miercoles");
+            ////datos.Add(4, "Jueves");
+            ////datos.Add(5, "Viernes");
+            ////datos.Add(6, "Sabado");
+            ////datos.Add(7, "Domingo");
 
-            //Console.WriteLine("Ingrese valor: ");
-            //val = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("El dia ingresado es: " + datos[val]);
+            ////Console.WriteLine("Ingrese valor: ");
+            ////val = Convert.ToInt32(Console.ReadLine());
+            ////Console.WriteLine("El dia ingresado es: " + datos[val]);
 
+            //#endregion
+
+            //#region Ejemplo con Diccionario
+
+            //int horasTrabajo = 0, horasExtras = 0, costoHoraExtra = 0, costoTotal = 0, codigoTrabajador = 0;
+            //string nombreTrabajador = "", continuar = "N";
+
+            ////Dictionary<int, int> ListacostoExtra = new Dictionary<int, int>();
+            //////hora -  costo por hora
+            ////ListacostoExtra.Add(0, 10);
+            ////ListacostoExtra.Add(1, 12);
+            ////ListacostoExtra.Add(2, 12);
+            ////ListacostoExtra.Add(3, 12);
+            ////ListacostoExtra.Add(4, 13);
+            ////ListacostoExtra.Add(5, 13);
+            ////ListacostoExtra.Add(6, 15);
+
+            //Console.WriteLine("----------------------------------");
+            ////Lista con propiedades de trabajadorBEAN
+            //List<trabajorBEAN> listTrabajador = new List<trabajorBEAN>();
+            //do
+            //{
+            //    //Instancio clase con tipo de varibale trabajadorBEAN (objeto)
+            //    trabajorBEAN trabBEAN = new trabajorBEAN();
+            //    //Instancio clase con tipo de variable trabajadorDAO (objeto)
+            //    trabajadorDAO trabDAO = new trabajadorDAO();
+            //    Console.Write("Codigo del trabajador: ");
+            //    codigoTrabajador = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Nombre del trabajador: ");
+            //    nombreTrabajador = Console.ReadLine();
+            //    Console.Write("Ingrese cantidad de horas trabajadas: ");
+            //    horasTrabajo = Convert.ToInt32(Console.ReadLine());
+
+            //    //if (horasTrabajo > 8)
+            //    //{
+            //    //    horasExtras = horasTrabajo - 8;
+            //    //    costoHoraExtra = ListacostoExtra[horasExtras] * horasExtras;
+            //    //    costoTotal = (8 * ListacostoExtra[0]) + costoHoraExtra;
+            //    //}
+            //    //else
+            //    //{
+            //    //    horasExtras = 0;
+            //    //    costoHoraExtra = 0;
+            //    //    costoTotal = (8 * ListacostoExtra[0]) + horasExtras;
+            //    //}
+
+            //    //SOLUCION1
+            //    //Console.Write("Cantidad de horas trabajadas: " + horasTrabajo + "\n");
+            //    //Console.Write("Costo de horas normales: " + ListacostoExtra[0] + "\n");
+            //    //Console.Write("Cantidad de horas extras: " + horasExtras + "\n");
+            //    //Console.Write("Costo Horas extras: " + costoHoraExtra + "\n");
+            //    //Console.Write("Costo Total: " + costoTotal + "\n");
+
+            //    trabBEAN.Codigo = codigoTrabajador;
+            //    trabBEAN.Nombre = nombreTrabajador;
+            //    trabBEAN.HorasTrabajo = horasTrabajo;
+            //    trabBEAN.CostoTotalTrabajadas = trabDAO.calculoHorasExtras(trabBEAN.HorasTrabajo);
+
+            //    listTrabajador.Add(trabBEAN);
+
+            //    Console.Write("Desea continuar (Y/N): ");
+            //    continuar = Console.ReadLine();
+
+            //} while (continuar == "Y");
+
+            //foreach (var item in listTrabajador)
+            //{
+            //    Console.WriteLine("Codigo: " + item.Codigo + "\t" + "Nombre: " + item.Nombre + "\t" + "Horas de trabajo: " + item.HorasTrabajo + "\t" + "Costo total de horas trabajadas: " + item.CostoTotalTrabajadas);
+            //}
             #endregion
 
-            #region Ejemplo con Diccionario
 
-            int horasTrabajo = 0, horasExtras = 0, costoHoraExtra = 0, costoTotal = 0, codigoTrabajador = 0;
-            string nombreTrabajador = "", continuar = "N";
+/*agregar usuarios que me solicité nombre, apellido, año de nacimiento, edad, direccion, dinero de banco. a su vez este a todos los del año 1999, 2000, 2001 obtendran un dinero del 20 % de lo que tiene acumulado, los de 2002, 2003 obtendran un dinero del 40 % de lo que tienen acumulado, 2004 tendrán un dinero del 50 % del sueldo minimo. mostrar NOMBRE, APELLIDO, AÑO DE NACIMIENTO, EDAD, DIRECCION, DINERO DE BANCO INRGESADO, DINERO DE BANCO CON QUE SALE.*/
+            #region ejercicio por mi
+            string nom = "", ape = "", dir = "", rpta ="N";
+            DateTime fecNac;
+            int idUsu, eda, dinIng ;
 
-            //Dictionary<int, int> ListacostoExtra = new Dictionary<int, int>();
-            ////hora -  costo por hora
-            //ListacostoExtra.Add(0, 10);
-            //ListacostoExtra.Add(1, 12);
-            //ListacostoExtra.Add(2, 12);
-            //ListacostoExtra.Add(3, 12);
-            //ListacostoExtra.Add(4, 13);
-            //ListacostoExtra.Add(5, 13);
-            //ListacostoExtra.Add(6, 15);
-
-            Console.WriteLine("----------------------------------");
-            //Lista con propiedades de trabajadorBEAN
-            List<trabajorBEAN> listTrabajador = new List<trabajorBEAN>();
+            List<usuarioBEAN> listaUsuario = new List<usuarioBEAN>();
+            
             do
             {
-                //Instancio clase con tipo de varibale trabajadorBEAN (objeto)
-                trabajorBEAN trabBEAN = new trabajorBEAN();
-                //Instancio clase con tipo de variable trabajadorDAO (objeto)
-                trabajadorDAO trabDAO = new trabajadorDAO();
-                Console.Write("Codigo del trabajador: ");
-                codigoTrabajador = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Nombre del trabajador: ");
-                nombreTrabajador = Console.ReadLine();
-                Console.Write("Ingrese cantidad de horas trabajadas: ");
-                horasTrabajo = Convert.ToInt32(Console.ReadLine());
+                usuarioBEAN usuBEAN = new usuarioBEAN();
+                usuarioDAO usuDAO = new usuarioDAO();
 
-                //if (horasTrabajo > 8)
-                //{
-                //    horasExtras = horasTrabajo - 8;
-                //    costoHoraExtra = ListacostoExtra[horasExtras] * horasExtras;
-                //    costoTotal = (8 * ListacostoExtra[0]) + costoHoraExtra;
-                //}
-                //else
-                //{
-                //    horasExtras = 0;
-                //    costoHoraExtra = 0;
-                //    costoTotal = (8 * ListacostoExtra[0]) + horasExtras;
-                //}
+                Console.Write("Ingrese identificador de usuario: ");
+                idUsu = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ingrese nombre: ");
+                nom = Console.ReadLine();
+                Console.Write("Ingrese apellido: ");
+                ape = Console.ReadLine();
+                Console.Write("Ingrese año de nacimiento: ");
+                fecNac = DateTime.Parse(Console.ReadLine());
+                int año = Convert.ToInt32(fecNac.Year);
+                Console.Write("Ingrese edad: ");
+                eda = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ingrese direccion: ");
+                dir = Console.ReadLine();
 
-                //SOLUCION1
-                //Console.Write("Cantidad de horas trabajadas: " + horasTrabajo + "\n");
-                //Console.Write("Costo de horas normales: " + ListacostoExtra[0] + "\n");
-                //Console.Write("Cantidad de horas extras: " + horasExtras + "\n");
-                //Console.Write("Costo Horas extras: " + costoHoraExtra + "\n");
-                //Console.Write("Costo Total: " + costoTotal + "\n");
+                usuBEAN.IdUsuario = idUsu;
+                usuBEAN.Nombre = nom;
+                usuBEAN.Apellido = ape;
+                usuBEAN.AñoNacimiento = año;
+                usuBEAN.Edad = eda;
+                usuBEAN.Direccion = dir;
+                usuBEAN.Dinero = usuDAO.CalcularAumento(usuBEAN.AñoNacimiento);
 
-                trabBEAN.Codigo = codigoTrabajador;
-                trabBEAN.Nombre = nombreTrabajador;
-                trabBEAN.HorasTrabajo = horasTrabajo;
-                trabBEAN.CostoTotalTrabajadas = trabDAO.calculoHorasExtras(trabBEAN.HorasTrabajo);
+                listaUsuario.Add(usuBEAN);
 
-                listTrabajador.Add(trabBEAN);
-
-                Console.Write("Desea continuar (Y/N): ");
-                continuar = Console.ReadLine();
-
-            } while (continuar=="Y");
-
-            foreach (var item in listTrabajador)
+                Console.Write("Desea continuar(Y/N): ");
+                rpta = Console.ReadLine();
+            } while (rpta=="Y");
+            
+            foreach (var item in listaUsuario)
             {
-                Console.WriteLine("Codigo: " + item.Codigo + "\t" + "Nombre: " + item.Nombre + "\t" + "Horas de trabajo: " + item.HorasTrabajo + "\t" + "Costo total de horas trabajadas: " + item.CostoTotalTrabajadas);
+                Console.WriteLine("IdUsuario \t Nombre \t Apellido \t AñoNacimiento \t Edad \t Direccion \t Dinero");
+                Console.WriteLine( item.IdUsuario +"\t"+ item.Nombre+"\t"+ item.Apellido+"\t"+item.AñoNacimiento+ "\t" +item.Edad+"\t"+ item.Direccion+"\t"+ item.Dinero);
             }
+
             #endregion
         }
     }
